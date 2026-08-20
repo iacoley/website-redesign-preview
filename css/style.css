@@ -143,7 +143,7 @@ a { color: var(--accent); }
   margin-bottom: 1rem;
 }
 
-.profile img {
+.profile-photo {
   width: 9rem;
   height: 9rem;
   object-fit: cover;
@@ -200,23 +200,12 @@ a { color: var(--accent); }
 }
 
 .aside-image {
-  max-width: 14rem;
+  max-width: 12rem;
   width: 100%;
   height: auto;
-  float: right;
-  margin: 0 0 1.25rem 1.5rem;
+  flex-shrink: 0;
   border-radius: 0.5rem;
   border: 1px solid var(--border);
-}
-
-/* Sectioned content should never wrap around a floated image above it. */
-main section { clear: both; }
-
-@media (max-width: 32rem) {
-  .aside-image {
-    float: none;
-    margin: 0 0 1.25rem;
-  }
 }
 
 ul.plain, dl.section-list {
