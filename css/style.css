@@ -3,7 +3,7 @@
   --fg: #1a1a24;
   --muted: #5b5b70;
   --accent: #7a3b2e;
-  --border: #d8d8ea;
+  --border: #bcbce0;
   --card-bg: #ffffff;
   --max-width: 46rem;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -219,7 +219,7 @@ ul.item-list li { margin-bottom: 0.4rem; }
   padding: 2rem 1.25rem 3rem;
   color: var(--muted);
   font-size: 0.85rem;
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--border);
 }
 
 hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
