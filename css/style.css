@@ -153,6 +153,8 @@ a { color: var(--accent); }
 
 .profile-text { flex: 1; min-width: 14rem; }
 
+.profile-text h1 { margin-top: 0; }
+
 .contact { color: var(--muted); font-size: 0.95rem; }
 
 .callout {
@@ -195,6 +197,26 @@ a { color: var(--accent); }
   margin: 0.25rem 0 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.aside-image {
+  max-width: 14rem;
+  width: 100%;
+  height: auto;
+  float: right;
+  margin: 0 0 1.25rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+/* Sectioned content should never wrap around a floated image above it. */
+main section { clear: both; }
+
+@media (max-width: 32rem) {
+  .aside-image {
+    float: none;
+    margin: 0 0 1.25rem;
+  }
 }
 
 ul.plain, dl.section-list {
